@@ -1,5 +1,6 @@
 #!/usr/bin/env python3.3
 # -*- coding: utf-8 -*-
+# Copyright (c) 2014 Frederik Schou Schmidt
 
 import urllib.request
 import re
@@ -55,7 +56,7 @@ def getVideoStream(data, quality):
 if __name__ == "__main__":
 	quality = 0
 	if len(sys.argv) == 1:
-		print("""Syntax:
+		print("""DRTV\nA command-line interface to download videos from http://www.dr.dk/tv/\nCopyright (c) 2014 Frederik Schou Schmidt\n\nSyntax:
 		%s url [quality]
 		Available qualities:
 		0 - Best
